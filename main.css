@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: white;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: intro 0s ease-in 1s forwards;
+  animation-fill-mode: forwards;
+}
+.intro img {
+  height: auto;
+  width: 50%;
+  max-width: 200px;
+}
+
+@keyframes intro {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+.hr-vertical {
+  display: none;
+}
+
+.contenedor {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.titulo {
+  font-size: 20px;
+  font-weight: 500;
+  color: #5A72F5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sub-titulo {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333E5B;
+  margin-bottom: 20px;
+}
+
+.botones {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.btn-resolver {
+  display: inline-block;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  background-color: #37CEB0;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-incrementar {
+  display: inline-block;
+  border: none;
+  border-radius: 25px;
+  background-color: #333E5B;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 2px 13px;
+  outline: none;
+  cursor: pointer;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.tabla {
+  width: 100%;
+  max-width: 300px;
+}
+.tabla .fila {
+  margin-bottom: 10px;
+}
+.tabla .fila:last-child {
+  margin-bottom: 0;
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+}
+.fila input[type=text] {
+  border-radius: 10px;
+  padding: 5px 0;
+  border: 1px solid #37CEB0;
+  box-shadow: 0 0 6px rgba(55, 206, 176, 0.5);
+  font-size: 18px;
+  font-weight: 500;
+  color: #333E5B;
+  width: calc(100%);
+  margin-right: 10px;
+  text-align: center;
+  outline: none;
+}
+.fila input[type=text]::placeholder {
+  color: #B8C2CE;
+}
+.fila input[type=text]:last-child {
+  margin-right: 0;
+}
+.fila input[type=text]:disabled {
+  background-color: white;
+}
+.fila span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333E5B;
+  margin-right: 10px;
+}
+
+.bloque-dos {
+  margin-top: 40px;
+}
+.bloque-dos .contenedor-tabla {
+  margin-bottom: 30px;
+}
+.bloque-dos .contenedor-tabla:last-child {
+  margin-bottom: 0;
+}
+
+.box-resultados h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #37CEB0;
+  margin-bottom: 10px;
+}
+
+.resultados {
+  display: flex;
+  flex-direction: column;
+}
+.resultados span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333E5B;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .sub-contenedor {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hr-vertical {
+    display: inline-block;
+    border-right: 1px solid #B8C2CE;
+    border-right-style: dashed;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .bloque-uno, .bloque-dos {
+    max-width: 50%;
+  }
+
+  .bloque-dos {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .hr-vertical {
+    display: inline-block;
+    border-right: 1px solid #B8C2CE;
+    border-right-style: dashed;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .titulo {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .sub-titulo {
+    font-size: 16px;
+  }
+
+  .btn-resolver {
+    font-size: 16px;
+  }
+
+  .btn-incrementar {
+    font-size: 28px;
+    padding: 2px 15px;
+  }
+
+  .bloque-uno {
+    min-width: 300px;
+  }
+
+  .bloque-uno, .bloque-dos {
+    max-width: initial;
+  }
+
+  .bloque-dos {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .bloque-dos .contenedor-tabla {
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+  .bloque-dos .contenedor-tabla:last-child {
+    margin-bottom: 0;
+  }
+
+  .box-resultados {
+    width: 100%;
+  }
+  .box-resultados h4 {
+    font-size: 20px;
+  }
+
+  .resultados span {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
